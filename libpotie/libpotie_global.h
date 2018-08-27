@@ -1,0 +1,12 @@
+#ifndef LIBPOTIE_GLOBAL_H
+#define LIBPOTIE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBPOTIE_LIBRARY)
+#  define LIBPOTIESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBPOTIESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBPOTIE_GLOBAL_H
